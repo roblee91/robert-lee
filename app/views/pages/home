@@ -1,0 +1,222 @@
+<!-- ==============================================
+HEADER
+=============================================== -->
+<header id="home" class="jumbotron" style="padding-top: 150px">
+  <div class="container">
+    <div class="row">
+      <div class="text-col">
+        <h1>Rescuing Leftover Cuisine</h1>
+        <div class="col-sm-8 col-sm-push-2">
+          <p>Helping the hungry by rescuing and donating leftover food to homeless shelters.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row text-center margin-top-30">
+      <div class="col-sm-12">
+        <div class="scrollimation fade-left d2">
+          <p class="in">Give monthly by joining our Full Plate Fund today!</p>
+          <%= link_to 'Donate Now', 'https://www.rescuingleftovercuisine.org/full-plate-fund', class:'btn btn-meflat btn-info' %>
+        </div>
+      </div>
+    </div>
+
+    <a id="video-link" class="btn btn-meflat white icon-left scrollimation fade-left faded d1" href="//www.youtube.com/watch?v=TTLZBp6bPB8" target="_blank"><i class="fa fa-youtube-play"></i>Video</a>
+
+  </div>
+
+</header><!--End header -->
+
+<!-- ==============================================
+PROBLEM STATEMENT
+=============================================== -->
+<section id="problem" class="gray-bg padding-top-bottom">
+
+  <div class="container">
+
+    <header class="section-header text-center">
+
+      <h1 class="scrollimation scale-in">The Problem</h1>
+      <p class="scrollimation fade-in d1">Millions of people around the globe are unable to get access to food, while countless meals are thrown away each day.</p>
+
+    </header>
+
+    <div class="row problem text-center">
+      <div class="col-sm-6">
+        <canvas id="waste-chart"></canvas>
+        <div id="food-overlay" class="chart-overlay scrollimation scale-in">
+          40%
+        </div>
+        <p id="food-caption" class="chart-caption scrollimation fade-up">of food in the US is thrown away.</p>
+      </div>
+
+      <div class="col-sm-6 xs-top-spacing">
+        <div id="people-1">
+          <i class="fa fa-male scrollimation fade-in"></i>
+          <i class="fa fa-male scrollimation fade-in"></i>
+          <i class="fa fa-male scrollimation fade-in"></i>
+          <i class="fa fa-male scrollimation fade-in"></i>
+        </div>
+        <div id="people-2">
+          <i class="fa fa-male scrollimation fade-in"></i>
+          <i class="fa fa-male scrollimation fade-in"></i>
+          <i class="fa fa-male scrollimation fade-in primary"></i>
+        </div>
+        <div id="people-overlay" class="chart-overlay scrollimation scale-in">
+          1 in 7
+        </div>
+        <p id="people-caption" class="chart-caption scrollimation fade-up">Americans are food insecure.</p>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ==============================================
+SOLUTION
+=============================================== -->
+<section id="solution" class="dark-bg light-typo padding-top-bottom">
+
+  <div class="container">
+
+    <header class="section-header text-center">
+
+      <h1 class="scrollimation scale-in">Our Solution</h1>
+      <p>We aim to become the world’s most widely used solution for companies and individuals to eliminate food waste in their communities, making food rescue sustainable and universal, and food hunger a thing of the past. Working together, we can ensure that only hunger is left behind!</p>
+
+    </header>
+
+    <div class="row solution">
+      <div class="col-sm-6">
+        <h2>Food Rescued<small>(lbs)</small></h2>
+        <canvas id="food-chart"></canvas>
+      </div>
+
+      <div class="col-sm-6 xs-top-spacing">
+        <h2>Meals Served</h2>
+        <canvas id="meals-chart"></canvas>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- ==============================================
+NEWS
+=============================================== -->
+<section id="news" class="white-bg padding-top-bottom">
+
+  <div class="container">
+    <header class="section-header text-center">
+      <h1 class="scrollimation">In the News</h1>
+    </header>
+
+    <div class="row news">
+
+      <div class="col-md-3 col-sm-6 item scrollimation fade-up">
+        <div class="icon">
+          <%= link_to '//www.huffingtonpost.com/2015/01/30/rescue-leftover-cuisine_n_6563516.html', target: '_blank' do %>
+            <%= image_tag 'huffingtonpost.jpg', class: 'img-responsive img-center', alt: 'Huffington Post' %>
+          <% end %>
+        </div>
+      </div>
+
+      <div class="col-md-3 col-sm-6 item scrollimation fade-up d1">
+        <div class="icon">
+          <%= link_to '//www.cnn.com/2015/05/14/us/cnn-heroes-lee/', target: '_blank' do %>
+            <%= image_tag 'cnnlogosquare.png', class: 'img-responsive img-center', alt: 'CNN' %>
+          <% end %>
+        </div>
+      </div>
+
+      <div class="col-md-3 col-sm-6 item scrollimation fade-up d2">
+        <div class="icon">
+          <%= link_to 'http://nowth.is/this-company-rescues-leftover-food-and-donates-it-to-homeless-shelters-', target: '_blank' do %>
+            <%= image_tag 'nowthis.png', class: 'img-responsive img-center', alt: 'Now This' %>
+          <% end %>
+        </div>
+      </div>
+
+      <div class="col-md-3 col-sm-6 item scrollimation fade-up d3">
+        <div class="icon">
+          <%= link_to 'https://www.nytimes.com/2017/05/02/opinion/going-digital-to-rescue-food.html', target: '_blank' do %>
+            <%= image_tag 'nytimes.png', class: 'img-responsive img-center', alt: 'New York Times' %>
+          <% end %>
+        </div>
+      </div>
+
+      <div class="col-md-3 col-sm-6 item scrollimation fade-up d4">
+        <div class="icon">
+          <%= link_to 'https://www.globalcitizen.org/en/content/non-profit-rescues-food-waste-donate-hunger/', target: '_blank' do %>
+            <%= image_tag 'GlobalCitizen.png', class: 'img-responsive img-center', alt: 'Global Citizen' %>
+          <% end %>
+        </div>
+      </div>
+
+      <div class="col-md-3 col-sm-6 item scrollimation fade-up d5">
+        <div class="icon">
+          <%= link_to 'http://www.globalgiving.org/projects/rescuing-leftover-cuisine-for-the-hungry/%3Fshow=recurring', target: '_blank' do %>
+            <%= image_tag 'badge2016.png', class: 'img-responsive img-center', alt: 'GlobalGiving Top-Ranked Organization 2016', style: 'padding-top: 15px' %>
+          <% end %>
+        </div>
+      </div>
+
+      <div class="col-md-3 col-sm-6 item scrollimation fade-up d6">
+        <div class="icon">
+          <%= link_to 'https://www.guidestar.org/profile/46-3198412', target: '_blank' do %>
+            <%= image_tag 'guidestar.png', class: 'img-responsive img-center', id: 'guidestar', alt: 'Guide Star' %>
+          <% end %>
+        </div>
+      </div>
+
+      <div class="col-md-3 col-sm-6 item scrollimation fade-up d7">
+        <div class="icon">
+          <%= link_to 'http://goodfoodorgguide.com/listing/rescuing-leftover-cuisine/', target: '_blank' do %>
+            <%= image_tag 'goodfoodguide.png', class: 'img-responsive img-center', alt: 'Good Food Guide' %>
+          <% end %>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6 item scrollimation fade-up d8 col-md-offset-2">
+        <div class="icon">
+          <%= link_to 'https://www.b1g1.com/businessforgood/awards/', target: '_blank' do %>
+              <%= image_tag 'CIA-Winner.png', class: 'img-responsive img-center', alt: 'CIA Winner 2017' %>
+          <% end %>
+        </div>
+      </div>
+      <div class="col-md-3"> <!-- Divider --> </div>
+      <div class="col-md-4 col-sm-6 item scrollimation fade-up d8">
+        <div class="icon">
+          <%= link_to 'https://www.forbes.com/sites/alexandrawilson1/2017/11/14/meet-the-30-under-30-social-entrepreneurs-making-an-impact-in-2018/#7130f1463a33', target: '_blank' do %>
+              <%= image_tag 'forbes-30-under-30.jpg', class: 'img-responsive img-center img--forbes', alt: 'Forbes 30 under 30' %>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==============================================
+GET INVOLVED
+=============================================== -->
+<section id="get-involved" class="color-bg light-typo padding-top-bottom">
+
+  <div class="container">
+
+    <header class="section-header text-center">
+
+      <h1 class="scrollimation scale-in">Get Involved</h1>
+      <p class="scrollimation fade-in d1">Want to help eliminate food waste and feed the hungry? Great, there are multiple ways you can help!</p>
+
+    </header>
+
+    <div class="row get-involved text-center scrollimation fade-up">
+      <a class="btn btn-meflat white icon-left scrollimation" href="http://rescuingleftovercuisine.org/donate-food"><i class="fa fa-cutlery"></i>Donate Food</a>
+      <a class="btn btn-meflat white icon-left scrollimation" href="http://rescuingleftovercuisine.org/donate-funds"><i class="fa fa-usd"></i>Donate Money</a>
+      <a class="btn btn-meflat white icon-left scrollimation" href="http://www.rescuingleftovercuisine.org/calendar"><i class="fa fa-clock-o"></i>Volunteer</a>
+    </div>
+
+  </div>
+</section>
